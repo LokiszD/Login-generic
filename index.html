@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="content first-content">
+            <div class="first-column"> <!-- primeira coluna do login -->
+                <h2 class="title">Welcome</h2>
+                <p class="description">To keep connected with us</p>
+                <p class="description">login with your personal info</p>
+                <button class="btn" type="submit" onclick="window.location.href='signIn.html'">sign in</button>
+            </div><!-- firt-column -->
+            <div class="second-column"> <!-- segunda coluna do login -->
+                <h2 class="title">Create Acount</h2>
+                <div class="social-media">
+                    <ul class="icons"> <!-- cadastrar com essa redes social -->
+                        <li><a href=""><img src="imagens/face.png" alt="face"></a></li>
+                        <li><a href=""><img src="imagens/google.png" alt="google"></a></li>
+                        <li><a href=""><img src="imagens/linkedin.png" alt="linkedin"></a></li>
+                    </ul>
+                </div>
+                <p class="description">or use your email for registration</p>
+                <form action="" class="form">
+
+                    <label class="label-input" for="">
+                        <img src="svg/user.svg" alt="">
+                        <input type="text" name="" id="" placeholder="name">
+                    </label>
+                    <label class="label-input" for="">
+                        <img src="svg/email.svg" alt="">
+                        <input type="email" name="" id="" placeholder="email">
+                    </label>
+                    <label class="label-input" for="">
+                        <img src="svg/lock.svg" alt="">
+                        <input type="password" name="" id="" placeholder="password">
+                    </label>
+
+                    <button class="btn" type="submit" onclick="createAcount()">sign up</button>
+                </form>
+
+            </div><!-- second-column -->
+        </div><!-- content first-content end -->
+        
+    </div> <!-- container -->
+
+    <script src="js/index.js"></script>
+</body>
+</html>

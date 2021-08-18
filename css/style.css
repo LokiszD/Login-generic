@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{ /*reseta a ajusta o CSS dos navegadores*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center; /*centraliza*/
+    height: 100vh; /*pega a tela inteira*/
+    align-items: center; /*alinha em altura por causa do 100vh*/
+    background-color: rgb(199, 199, 199);
+}
+
+.content{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    height: 50%;
+    width: 960px;
+    justify-content: space-between; /*space-around cai bem tambem*/
+    align-items: center;
+    position: relative; /*para funcionar a cor do bg do before*/
+}
+
+.content:before{ /* */
+    content: "";
+    position: absolute;
+    background-color: rgb(3, 167, 167);
+    height: 100%;
+    width: 40%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.first-content{ /*Primeira tela do login*/
+    display: flex;
+}
+
+.btn{ /*botao*/
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    font-size: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.description{
+    margin: 5px;
+}
+
+.first-column{
+    text-align: center;
+    flex: 1 0 auto; /*Divide o espaco proporcionalmente*/
+    z-index: 10; /*Traz o texto pra frente*/
+}
+
+.first-column .title{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+}
+
+.first-column .description{
+    color: rgb(255, 255, 255);
+}
+
+.first-column .btn{ /*Botao first-column*/
+    background-color: rgb(3, 167, 167);
+    border-color: rgb(255, 255, 255);
+}
+
+.first-column .btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(3, 167, 167);
+    transition: 0.5s;
+} /*Botao first end*/
+
+.second-column{
+    flex: 1.5 0 auto;
+    text-align: center;
+}
+
+.second-column .title{
+    color: rgb(3, 167, 167);
+    font-size: 28px;
+}
+
+.second-column .description{
+    color: rgb(3, 167, 167);
+}
+
+.second-column .btn{ /*Botao second-column*/
+    color: rgb(3, 167, 167);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(3, 167, 167);
+    align-self: center;
+}
+
+.second-column .btn:hover{
+    background-color: rgb(3, 167, 167);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+} /*Botao second end*/
+
+form .label-input{
+    display: flex;
+    width: 250px;
+    align-self: center;
+    text-align: left;
+    align-items: center;
+}
+
+form .label-input img{
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+}
+
+form input{
+    border: none;
+    background-color: rgb(216, 234, 243);
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    align-self: center;
+}
+
+.icons{ /*Icones de rede social*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.icons img:hover{
+    border-radius: 100%;
+    background-color: rgb(216, 234, 243);
+}
+
+.icons li{
+    margin: 10px;
+}
+
+.icons img{
+    width: 50px;
+    height: 50px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column; /*Aqui alinha os input do formulario junto com o flex*/
+}
+
+
